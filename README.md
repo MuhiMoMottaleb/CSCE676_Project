@@ -109,29 +109,15 @@ See `requirements.txt` file for full dependency list
 
 ## 8. Repository Structure
 
-credit-card-fraud-detection/
-├─ README.md                  # Project overview and documentation
-├─ requirements.txt           # Full dependency list
+CSCE676_Project/
+├─ requirements.txt          # Full dependency list
+├─ checkpoints/
+│  ├─ maint_notebook.ipynb   # Main notebook for Project with results and analysis
+│  ├─ checkpoint_1.ipynb     # Early EDA/notebook
+│  └─ checkpoint2_2.ipynb    # RQ formation and finalization
 ├─ data/
-│  └─ creditcard.csv         # Kaggle dataset (not committed; user downloads)
-├─ notebooks/
-│  ├─ Project.ipynb          # Main deliverable notebook (RQ1–RQ4, full analysis)
-│  ├─ checkpoint1_eda.ipynb  # (Optional) initial EDA / Checkpoint 1
-│  ├─ checkpoint2_rq.ipynb   # (Optional) RQ formation / Checkpoint 2
-│  └─ experiments/
-│     └─ *.ipynb             # (Optional) extra exploratory notebooks
-├─ src/
-│  ├─ __init__.py            # (Optional) make src a package
-│  ├─ utils/
-│  │  ├─ __init__.py
-│  │  └─ preprocessing.py    # (Optional) data prep helpers
-│  └─ models/
-│     ├─ __init__.py
-│     └─ evaluation.py       # (Optional) shared eval functions
-├─ figures/
-│  └─ *.png                  # (Optional) exported plots for the report/video
-└─ docs/
-   └─ video_link.txt         # (Optional) link or notes about the project video
+│  └─ creditcard.csv         # Kaggle dataset 
+└── README.md                # This file
 
 ---
 
