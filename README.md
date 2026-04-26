@@ -109,21 +109,6 @@ See `requirements.txt` file for full dependency list
 
 ## 8. Repository Structure
 
-.
-├── assets/             # Images, logos, and static files
-│   ├── css/            # Stylesheets
-│   └── images/         # Project screenshots or icons
-├── docs/               # Additional documentation
-├── src/                # Main source code files
-│   ├── components/     # UI components (if applicable)
-│   └── index.js        # Entry point
-├── tests/              # Automated tests
-├── .gitignore          # Files ignored by Git
-├── LICENSE             # Project license
-├── package.json        # Dependencies and scripts
-└── README.md           # This documentation
-
-
 CSCE676_Project/
 ├─ requirements.txt          # Full dependency list
 ├─ checkpoints/
