@@ -103,15 +103,16 @@ See `requirements.txt` file for full dependency list
 - Keras: 3.12.2 (autoencoder implementation)
 - TensorFlow: 2.19.0
 ## 8. Repository Structure
+
 CSCE676_Project/
-├─ README.md                  # This file
-├─ requirements.txt           # Full dependency list
+├─ requirements.txt          # Full dependency list
+├─ checkpoints/
+│  ├─ maint_notebook.ipynb   # Main notebook for Project with results and analysis
+│  ├─ checkpoint_1.ipynb     # Early EDA/notebook
+│  └─ checkpoint2_2.ipynb    # RQ formation and finalization
 ├─ data/
-│  └─ creditcard.csv         # Kaggle dataset (not committed, user downloads)
-├─ notebooks/
-│  ├─ Project.ipynb          # Main checkpoint 2/3 deliverable <source_id data="1" title="Project.pdf" />
-│  ├─ checkpoint_1.ipynb  # (Optional) early EDA/notebook
-│  └─ checkpoint2_2.ipynb   # (Optional) RQ formation if separate
+│  └─ creditcard.csv         # Kaggle dataset 
+└── README.md                # This file
 
 ## 9. Results Summary
 
