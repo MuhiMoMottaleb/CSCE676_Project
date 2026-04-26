@@ -112,7 +112,7 @@ See `requirements.txt` file for full dependency list
 CSCE676_Project/
 ├─ requirements.txt          # Full dependency list
 ├─ checkpoints/
-│  ├─ maint_notebook.ipynb   # Main notebook for Project with results and analysis
+│  ├─ main_notebook.ipynb    # Main notebook for Project with results and analysis
 │  ├─ checkpoint_1.ipynb     # Early EDA/notebook
 │  └─ checkpoint2_2.ipynb    # RQ formation and finalization
 ├─ data/
