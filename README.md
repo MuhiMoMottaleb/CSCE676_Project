@@ -91,6 +91,8 @@ This project was developed and run in **Google Colab** using Python and standard
 
 See `requirements.txt` file for full dependency list
 
+---
+
 ## 7. Key Dependencies and Versions
 - Python: 3.12.13 
 - Jupyter / Colab environment  
@@ -102,7 +104,25 @@ See `requirements.txt` file for full dependency list
 - seaborn: 0.13.12 (plots & KDEs)
 - Keras: 3.12.2 (autoencoder implementation)
 - TensorFlow: 2.19.0
+
+---
+
 ## 8. Repository Structure
+
+.
+├── assets/             # Images, logos, and static files
+│   ├── css/            # Stylesheets
+│   └── images/         # Project screenshots or icons
+├── docs/               # Additional documentation
+├── src/                # Main source code files
+│   ├── components/     # UI components (if applicable)
+│   └── index.js        # Entry point
+├── tests/              # Automated tests
+├── .gitignore          # Files ignored by Git
+├── LICENSE             # Project license
+├── package.json        # Dependencies and scripts
+└── README.md           # This documentation
+
 
 CSCE676_Project/
 ├─ requirements.txt          # Full dependency list
@@ -113,6 +133,8 @@ CSCE676_Project/
 ├─ data/
 │  └─ creditcard.csv         # Kaggle dataset 
 └── README.md                # This file
+
+---
 
 ## 9. Results Summary
 
