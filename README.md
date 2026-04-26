@@ -1,7 +1,8 @@
 # CSCE676_Project
 CSCE 676 Course Project
+Spring 2026
 
-# Credit Card Fraud Detection – Supervised vs Anomaly Models
+# Cracking Credit Card Fraud: Supervised Learning vs Anomaly Detection
 
 ## 1. Overview
 
