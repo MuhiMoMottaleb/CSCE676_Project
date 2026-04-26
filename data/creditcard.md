@@ -1,2 +1,3 @@
-- Credit card csv file can be directly found in the following link in google drive: (https://drive.google.com/file/d/1Az1UmlPfs4stGavn0cz5q44PRxAooNF4/view?usp=sharing)
-- The creditcard.csv file is ~150 MB -> No direct attachment of csv in github, but in google drive. 
+Credit card csv file can be directly found in the following link in google drive: (https://drive.google.com/file/d/1Az1UmlPfs4stGavn0cz5q44PRxAooNF4/view?usp=sharing)
+
+The creditcard.csv file is ~150 MB -> No direct attachment of csv in github, but in google drive. 
