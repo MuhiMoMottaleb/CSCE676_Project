@@ -109,6 +109,7 @@ See `requirements.txt` file for full dependency list
 
 ## 8. Repository Structure
 
+```text
 CSCE676_Project/
 ├─ requirements.txt          # Full dependency list
 ├─ checkpoints/
@@ -116,7 +117,7 @@ CSCE676_Project/
 │  ├─ checkpoint_1.ipynb     # Early EDA/notebook
 │  └─ checkpoint2_2.ipynb    # RQ formation and finalization
 ├─ data/
-│  └─ creditcard.csv         # Kaggle dataset 
+│  └─ creditcard.csv         # Kaggle dataset
 └── README.md                # This file
 
 ---
