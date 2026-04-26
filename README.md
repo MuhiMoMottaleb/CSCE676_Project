@@ -79,6 +79,17 @@ This project was developed and run in **Google Colab** using Python and standard
    git clone https://github.com/your-username/credit-card-fraud-detection.git
    cd credit-card-fraud-detection
 
+2. **Set up Environment:**
+   - Colab:
+      - Upload the repo (or mount Drive).
+      - Run the initial setup cell in Project.ipynb to install dependencies as needed.
+3. **Download the Dataset**
+4. **Run the `main_notebook.ipynb` file**
+5. **Reproduce Results**
+   - Ensure `RANDOM_STATE` is fixed (as in the notebook) to get comparable metrics and plots
+
+See `requirements.txt` file for full dependency list
+
 ## 7. Key Dependencies and Versions
 - Python: 3.12.13 
 - Jupyter / Colab environment  
