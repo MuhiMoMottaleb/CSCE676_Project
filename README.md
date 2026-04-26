@@ -119,6 +119,7 @@ CSCE676_Project/
 ├─ data/
 │  └─ creditcard.csv         # Kaggle dataset
 └── README.md                # This file
+```
 
 ---
 
