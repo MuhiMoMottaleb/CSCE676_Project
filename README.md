@@ -111,13 +111,14 @@ See `requirements.txt` file for full dependency list
 
 ```text
 CSCE676_Project/
-├─ requirements.txt          # Full dependency list
 ├─ checkpoints/
 │  ├─ main_notebook.ipynb    # Main notebook for Project with results and analysis
 │  ├─ checkpoint_1.ipynb     # Early EDA/notebook
 │  └─ checkpoint2_2.ipynb    # RQ formation and finalization
 ├─ data/
-│  └─ creditcard.csv         # Kaggle dataset
+│  └─ creditcard.md          # provides location to the creditcard.csv file, due to the .csv file being > 100 MB (~150 MB)
+├─ requirements.txt          # Full dependency list
+├─ LICENSE                   # Full dependency list
 └── README.md                # This file
 ```
 
