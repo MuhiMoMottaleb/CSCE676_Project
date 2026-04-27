@@ -41,6 +41,22 @@ How do kernel-based (One-Class SVM) and neural (autoencoder) anomaly detection m
 
 ---
 
+## 4. Framework/Setup for Each RQs
+
+Each of the RQs have the following framework/setup block diagram to show each RQ was conducted.
+
+**RQ1 Framework Setup**
+<img width="1206" height="352" alt="image" src="https://github.com/user-attachments/assets/2a082036-6156-4d66-97a1-27977ba79735" />
+
+**RQ2 Framework Setup**
+<img width="1178" height="314" alt="image" src="https://github.com/user-attachments/assets/b2d40c3d-d3e1-4c95-ba12-590bc87794b1" />
+
+**RQ3 Framework Setup**
+<img width="1080" height="415" alt="image" src="https://github.com/user-attachments/assets/5c2ad250-b222-49be-8281-80f687a3fef2" />
+
+
+---
+
 ## 5. Data
 
 **Dataset:**  
