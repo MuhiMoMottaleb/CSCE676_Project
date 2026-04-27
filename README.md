@@ -1,8 +1,7 @@
-# CSCE676_Project
+# Cracking Credit Card Fraud: Supervised Learning vs Anomaly Detection
 CSCE 676 Course Project
 Spring 2026
 
-# Cracking Credit Card Fraud: Supervised Learning vs Anomaly Detection
 
 ## 1. Overview
 
@@ -46,13 +45,13 @@ How do kernel-based (One-Class SVM) and neural (autoencoder) anomaly detection m
 Each of the RQs have the following framework Setup block diagram to show each RQ was conducted, as depicted below. All of the RQs and their blocks have common things (such as loading creditcard.csv) that aren't repeateadly called out, for brevity purposes. More detail is in the `main_notebook.ipynb` file.
 
 **RQ1 Framework Setup**
-<img width="1206" height="352" alt="image" src="https://github.com/user-attachments/assets/2a082036-6156-4d66-97a1-27977ba79735" />
+<img width="1000" height="250" alt="image" src="https://github.com/user-attachments/assets/2a082036-6156-4d66-97a1-27977ba79735" />
 
 **RQ2 Framework Setup**
-<img width="1178" height="314" alt="image" src="https://github.com/user-attachments/assets/b2d40c3d-d3e1-4c95-ba12-590bc87794b1" />
+<img width="1000" height="250" alt="image" src="https://github.com/user-attachments/assets/b2d40c3d-d3e1-4c95-ba12-590bc87794b1" />
 
 **RQ3 Framework Setup**
-<img width="1080" height="415" alt="image" src="https://github.com/user-attachments/assets/5c2ad250-b222-49be-8281-80f687a3fef2" />
+<img width="1000" height="250" alt="image" src="https://github.com/user-attachments/assets/5c2ad250-b222-49be-8281-80f687a3fef2" />
 
 
 ---
@@ -126,11 +125,12 @@ See `requirements.txt` file for full dependency list
 ```text
 CSCE676_Project/
 ├─ checkpoints/
-│  ├─ main_notebook.ipynb    # Main notebook for Project with results and analysis
 │  ├─ checkpoint_1.ipynb     # Early EDA/notebook
 │  └─ checkpoint2_2.ipynb    # RQ formation and finalization
+├─ noteboooks/
+│  └─ main_notebook.ipynb    # Main notebook for Project with results and analysis
 ├─ data/
-│  └─ creditcard.md          # rovides location to the creditcard.csv file, due to the .csv file being > 100 MB (~150 MB)
+│  └─ creditcard.md          # provides location to the creditcard.csv file, due to the .csv file being > 100 MB (~150 MB)
 ├─ requirements.txt          # Full dependency list
 ├─ LICENSE                   # Provides copyright and permission terms and conditions
 └── README.md                # This file
