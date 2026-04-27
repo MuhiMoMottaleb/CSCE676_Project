@@ -51,7 +51,7 @@ Each of the RQs have the following framework Setup block diagram to show each RQ
 <img width="1000" height="250" alt="image" src="https://github.com/user-attachments/assets/b2d40c3d-d3e1-4c95-ba12-590bc87794b1" />
 
 **RQ3 Framework Setup**
-<img width="1000" height="300" alt="image" src="https://github.com/user-attachments/assets/5c2ad250-b222-49be-8281-80f687a3fef2" />
+<img width="1000" height="350" alt="image" src="https://github.com/user-attachments/assets/5c2ad250-b222-49be-8281-80f687a3fef2" />
 
 
 ---
