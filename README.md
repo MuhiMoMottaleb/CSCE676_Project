@@ -135,20 +135,20 @@ CSCE676_Project/
 │  └─ creditcard.md          # provides location to the creditcard.csv file, due to the .csv file being > 100 MB (~150 MB)
 ├─ requirements.txt          # Full dependency list
 ├─ LICENSE                   # Provides copyright and permission terms and conditions
-└── README.md                # This file
+└─ README.md                 # This file
 ```
 
 ---
 
 ## 9. Results Summary
 
-- Supervised Random Forest (test set):
+- Supervised Random Forest (on test set):
    - ROC-AUC ≈ 0.953, PR-AUC ≈ 0.845 
    - At threshold 0.1: precision ≈ 0.77, recall ≈ 0.86, F1 ≈ 0.81, with low expected cost per transaction under a cost ratio where false negatives are ten times more costly than false positives.
 
-- Anomaly detectors:
-   - One-Class SVM: test ROC-AUC ≈ 0.94, PR-AUC ≈ 0.27.  
-   - Autoencoder: test ROC-AUC ≈ 0.96, PR-AUC ≈ 0.65.
+- Anomaly detectors (on test set):
+   - One-Class SVM: ROC-AUC ≈ 0.94, PR-AUC ≈ 0.27.  
+   - Autoencoder: ROC-AUC ≈ 0.96, PR-AUC ≈ 0.65.
 
 - Complementarity (top 1% most suspicious transactions):
    - Class Weighted Random Forest detects 88 frauds, Autoencoder 81, One-Class SVM 79.  
