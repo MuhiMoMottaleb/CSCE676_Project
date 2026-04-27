@@ -6,7 +6,7 @@ Spring 2026
 
 ## 1. Overview
 
-This project investigates credit card fraud detection using the Kaggle “Credit Card Fraud Detection” dataset. With only ~0.17% of transactions labeled as fraud, the core challenge is extreme class imbalance and the high cost of missing fraudulent events. We compare cost-aware supervised classifiers (especially a class-weighted Random Forest) with anomaly detection methods (One-Class SVM and an autoencoder) to understand which approaches work best and whether anomaly detectors add value beyond a strong supervised baseline.
+This project investigates credit card fraud detection using the Kaggle “Credit Card Fraud Detection” dataset. With only ~0.17% of transactions labeled as fraud, the core challenge is extreme class imbalance and the high cost of missing fraudulent events. We compare cost-aware supervised classifiers (class-weighted Random Forest, logistic regression) with anomaly detection methods (One-Class SVM and an autoencoder) to understand which approaches work best and whether anomaly detectors add value beyond a strong supervised baseline.
 
 ---
 
@@ -30,10 +30,10 @@ This Colab-based notebook contains:
 
 ## 4. Research Questions
 
-**RQ1 (Course – Supervised Classification):**  
+**RQ1 (Supervised Classification):**  
 How do different supervised classifiers (Logistic Regression, Decision Tree, Random Forest) trade off precision, recall, and cost-sensitive performance for fraud detection under varying decision thresholds?
 
-**RQ2 (Course – Clustering):**  
+**RQ2 (Clustering):**  
 Do fraud and non-fraud transactions exhibit distinct cluster structures in the PCA feature space, and can clustering help identify subtypes of fraudulent transactions? 
 
 **RQ3 (External – One-Class SVM vs Autoencoder):**  
@@ -59,7 +59,7 @@ How do kernel-based (One-Class SVM) and neural (autoencoder) anomaly detection m
 - Split into **train/validation/test** with stratification:
   - 60% train, 20% validation, 20% test (fraud rate preserved in each split).  
 - Standardized all numeric features (`Time`, `Amount`, `V1–V28`) using `StandardScaler`:
-  - Required for scale-sensitive models (logistic regression, k-means, One-Class SVM, Isolation Forest, autoencoder).
+  - Required for scale-sensitive models (logistic regression, k-means, One-Class SVM, autoencoder).
 - For clustering, created a subsample:
   - All frauds + 10× random sample of non-frauds (fraud rate ≈ 9.1%)
 - For One-Class SVM:
@@ -89,7 +89,6 @@ This project was developed and run in **Google Colab** using Python and standard
 5. **Reproduce Results**
    - Ensure `RANDOM_STATE` is fixed (as in the notebook) to get comparable metrics and plots
 
-See `requirements.txt` file for full dependency list
 
 ---
 
@@ -98,12 +97,14 @@ See `requirements.txt` file for full dependency list
 - Jupyter / Colab environment  
 - pandas: 2.2.2 
 - numpy: 2.0.2 
-- scikit-learn: 1.6.1 (RandomForestClassifier, OneClassSVM, metrics, clustering, etc.) 
+- scikit-learn: 1.6.1 (RandomForestClassifier, OneClassSVM, metrics, clustering) 
 - imbalanced-learn: 0.14.1
 - matplotlib: 3.10.0
 - seaborn: 0.13.12 (plots & KDEs)
 - Keras: 3.12.2 (autoencoder implementation)
 - TensorFlow: 2.19.0
+
+See `requirements.txt` file for full dependency list
 
 ---
 
@@ -136,5 +137,5 @@ CSCE676_Project/
 
 - Complementarity (top 1% most suspicious transactions):
    - Class Weighted Random Forest detects 88 frauds, Autoencoder 81, One-Class SVM 79.  
-   - All frauds flagged by the anomaly detectors at this top 1% are also found by the Random Forest; the Random Forest finds about 5 additional frauds that anomaly models miss.
+   - All frauds flagged by the anomaly detectors at this top 1% are also found by the Class Weighted Random Forest; the Class Weighted Random Forest finds about 5 additional frauds that anomaly models missed.
      
