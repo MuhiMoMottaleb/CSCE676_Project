@@ -41,9 +41,9 @@ How do kernel-based (One-Class SVM) and neural (autoencoder) anomaly detection m
 
 ---
 
-## 4. Framework/Setup for Each RQs
+## 4. Framework Setup for Each RQs
 
-Each of the RQs have the following framework/setup block diagram to show each RQ was conducted.
+Each of the RQs have the following framework Setup block diagram to show each RQ was conducted, as depicted below. All of the RQs and their blocks have common things (such as loading creditcard.csv) that aren't repeateadly called out, for brevity purposes. More detail is in the `main_notebook.ipynb` file.
 
 **RQ1 Framework Setup**
 <img width="1206" height="352" alt="image" src="https://github.com/user-attachments/assets/2a082036-6156-4d66-97a1-27977ba79735" />
