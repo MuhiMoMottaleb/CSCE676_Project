@@ -73,22 +73,19 @@ How do kernel-based (One-Class SVM) and neural (autoencoder) anomaly detection m
 
 This project was developed and run in **Google Colab** using Python and standard ML libraries.
 
+To run this project successfully, perform the steps defined below.
+
 **Steps:**
 
-1. **Clone the repo:**
-   ```bash
-   git clone https://github.com/your-username/credit-card-fraud-detection.git
-   cd credit-card-fraud-detection
-
-2. **Set up Environment:**
-   - Colab:
-      - Upload the repo (or mount Drive).
-      - Run the initial setup cell in Project.ipynb to install dependencies as needed.
-3. **Download the Dataset**
+1. **Download Credit Card Fraud Data**
+   - Download data from https://www.kaggle.com/mlg-ulb/creditcardfraud
+2. **Load downloaded Credit Card fraud data (`creditcard.csv`) into Google Colab directory**
+3. **Mount Google Drive**
+   - Ensure that the creditcard.csv file is in the same directory as the `main_notebook.ipynb` file or the `main_notebook.ipynb` will NOT run. 
 4. **Run the `main_notebook.ipynb` file**
+   - The `main_notebook.ipynb` file contains the setup for importing methods/functions/calls, setups, and dependencies. No need to run individual sections, single run is self contained.
 5. **Reproduce Results**
-   - Ensure `RANDOM_STATE` is fixed (as in the notebook) to get comparable metrics and plots
-
+   - Ensure `RANDOM_STATE` is fixed (as in the notebook) to get comparable metrics and plot.
 
 ---
 
@@ -117,9 +114,9 @@ CSCE676_Project/
 │  ├─ checkpoint_1.ipynb     # Early EDA/notebook
 │  └─ checkpoint2_2.ipynb    # RQ formation and finalization
 ├─ data/
-│  └─ creditcard.md          # provides location to the creditcard.csv file, due to the .csv file being > 100 MB (~150 MB)
+│  └─ creditcard.md          # rovides location to the creditcard.csv file, due to the .csv file being > 100 MB (~150 MB)
 ├─ requirements.txt          # Full dependency list
-├─ LICENSE                   # Full dependency list
+├─ LICENSE                   # Provides copyright and permission terms and conditions
 └── README.md                # This file
 ```
 
