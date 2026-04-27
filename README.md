@@ -13,7 +13,7 @@ This project investigates credit card fraud detection using the Kaggle “Credit
 
 ## 2. Main Notebook
 
-👉 The main deliverable is: **`main_notebook.ipynb`** (notebooks/main_notebook.ipynb) 
+👉 The main deliverable is: **`main_notebook.ipynb`** (https://github.com/MuhiMoMottaleb/CSCE676_Project/blob/56d6197a965cd7697771d8da652a5639adddf91f/notebooks/main_notebook.ipynb)
 
 This Colab-based notebook contains:
 - EDA and dataset description
