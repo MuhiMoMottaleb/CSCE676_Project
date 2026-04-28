@@ -18,7 +18,7 @@ This project investigates credit card fraud detection using the Kaggle “Credit
 This Colab-based notebook contains:
 - EDA and dataset description
 - RQ1–RQ3 experimental setup and results
-- Model comparisons (Class Weighted Random Forest, One-Class SVM, Autoencoder)
+- Model comparisons of Supervised Classifiers (Logistics Regression, Decision Tree, Random Forest) vs Anomaly Detectors (One-Class SVM, Autoencoder)
 - Final analysis and summary sections
 
 ---
@@ -98,9 +98,9 @@ To run this project successfully, perform the steps defined below.
    - Download data from https://www.kaggle.com/mlg-ulb/creditcardfraud
 2. **Load downloaded Credit Card fraud data (`creditcard.csv`) into Google Colab directory**
 3. **Mount Google Drive**
-   - Ensure that the creditcard.csv file is in the same directory as the `main_notebook.ipynb` file or the `main_notebook.ipynb` will NOT run. 
+   - Ensure that the creditcard.csv file is in the same directory as the `main_notebook.ipynb` file. If not, the `main_notebook.ipynb` will NOT run. 
 4. **Run the `main_notebook.ipynb` file**
-   - The `main_notebook.ipynb` file contains the setup for importing methods/functions/calls, setups, and dependencies. No need to run individual sections, single run is self contained.
+   - The `main_notebook.ipynb` file contains the setup for importing methods/functions/calls, setups, and dependencies. No need to run individual sections, the notebook is self contained.
 5. **Reproduce Results**
    - Ensure `RANDOM_STATE` is fixed (as in the notebook) to get comparable metrics and plot.
 
@@ -144,13 +144,13 @@ CSCE676_Project/
 
 - Supervised Random Forest (on test set):
    - ROC-AUC ≈ 0.953, PR-AUC ≈ 0.845 
-   - At threshold 0.1: precision ≈ 0.77, recall ≈ 0.86, F1 ≈ 0.81, with low expected cost per transaction under a cost ratio where false negatives are ten times more costly than false positives.
+   - At threshold 0.1%: precision ≈ 0.77, recall ≈ 0.86, F1 ≈ 0.81, with low expected cost per transaction under a cost ratio where false negatives are ten times more costly than false positives.
 
 - Anomaly detectors (on test set):
    - One-Class SVM: ROC-AUC ≈ 0.94, PR-AUC ≈ 0.27.  
    - Autoencoder: ROC-AUC ≈ 0.96, PR-AUC ≈ 0.65.
 
 - Complementarity (top 1% most suspicious transactions):
-   - Class Weighted Random Forest detects 88 frauds, Autoencoder 81, One-Class SVM 79.  
+   - *Class-Weighted Random Forest detected 88 frauds*, *Autoencoder detected 81 frauds*, and *One-Class detected SVM 79 frauds*.  
    - All frauds flagged by the anomaly detectors at this top 1% are also found by the Class Weighted Random Forest; the Class Weighted Random Forest finds about 5 additional frauds that anomaly models missed.
      
