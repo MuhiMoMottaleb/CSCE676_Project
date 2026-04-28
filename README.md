@@ -151,6 +151,6 @@ CSCE676_Project/
    - Autoencoder: ROC-AUC ≈ 0.96, PR-AUC ≈ 0.65.
 
 - Complementarity (top 1% most suspicious transactions):
-   - *Class-Weighted Random Forest detected 88 frauds*, *Autoencoder detected 81 frauds*, and *One-Class detected SVM 79 frauds*.  
+   - Class-Weighted Random Forest detected **88 frauds**, Autoencoder detected **81 frauds**, and One-Class SVM detected **79 frauds**.  
    - All frauds flagged by the anomaly detectors at this top 1% are also found by the Class Weighted Random Forest; the Class Weighted Random Forest finds about 5 additional frauds that anomaly models missed.
      
